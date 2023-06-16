@@ -9,7 +9,7 @@ $(function () {
     $(window).on('scroll', function () {
         let scrollTop = $(window).scrollTop();
         $('.scroll_event').each(function () {
-            if (scrollTop + $(window).innerHeight() / 2 > $(this).offset().top) {
+            if (scrollTop + $(window).innerHeight() - 200 > $(this).offset().top) {
                 $(this).addClass('scrolled');
             } //else {
             //$(this).removeClass('scrolled');
